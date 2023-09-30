@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class AttackCombo : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class AttackCombo : MonoBehaviour
     [SerializeField] int maxComboCount = 5;
     [SerializeField] float cdBetweenComboKeys;
     [SerializeField] float endLag;
+    [SerializeField] Animator animator;
 
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
@@ -35,11 +37,9 @@ public class AttackCombo : MonoBehaviour
     
     IEnumerator Attack(string key)
     {
-        yield return null;
         onCooldown = true;
-        Invoke(nameof(disableCooldown), cdBetweenComboKeys);
+        //Invoke(nameof(), cdBetweenComboKeys);
         PlayerMovement PM = GetComponent<PlayerMovement>();
-        PM.changeMoveState(false);
 
         RaycastHit2D raycastHit;
         if(PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
@@ -52,23 +52,42 @@ public class AttackCombo : MonoBehaviour
             rayHealth.TakeDamage(damage);
         }
 
+        
         // Basic Attack 1
         if(key == comboKeys[0].ToString().ToLower())
         {
-            Debug.Log("Attack1");
-        }        
+            PM.changeMoveState(false);
 
+            Debug.Log("Attack1");
+            animator.Play("Attack1");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            onCooldown = false;
+            
+        }
+        else
         // Basic Attack 2
         if(key == comboKeys[1].ToString().ToLower())
         {
             Debug.Log("Attack2");
-        }
+            animator.Play("Attack2");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            onCooldown = false;
 
+        }
+        else
         // Basic Attack 3
         if (key == comboKeys[2].ToString().ToLower())
         {
+            PM.changeMoveState(false);
+
             Debug.Log("Attack3");
+            animator.Play("Attack3");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length+1);
+            onCooldown = false;
+
         }
+        PM.changeMoveState(true);
+
     }
 
     void ComboCount(string key)
