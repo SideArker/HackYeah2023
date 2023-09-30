@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Combo : ScriptableObject
 {
     public bool enabled;
-    public string Name;
     public int damage;
     public int range;
     public string comboString;

@@ -11,11 +11,20 @@ public class Health : MonoBehaviour
 
     [Header("Other")]
     [SerializeField] bool showBossBar;
+    [SerializeField] GameObject normalHealthBar;
 
     public UnityEvent onDeath;
 
     #region Health Functions
 
+    public float getHealth()
+    {
+        return health;
+    }    
+    public float getMaxHealth()
+    {
+        return maxHealth;
+    }
     public void HealHealth(float health)
     {
         this.health += health;
@@ -37,13 +46,18 @@ public class Health : MonoBehaviour
 
         health -= damage;
 
+        if(health < maxHealth)
+        {
+            GameObject healthBar = Instantiate(normalHealthBar, transform.position, transform.rotation, transform);
+            healthBar.transform.position += transform.up * 0.75f;
+        }
+
         if (health <= 0) KillEntity();
 
 
     }
     public void TakeDamage(float amount)
     {
-        Debug.Log(amount);
         if (amount > shieldAmount)
         {
             float healthDeplete = amount - shieldAmount;
