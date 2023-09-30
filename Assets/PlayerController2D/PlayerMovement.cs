@@ -11,6 +11,13 @@ public class PlayerMovement : MonoBehaviour
     Collider2D interactingCollider;
 
     public static bool rotation;
+    bool canMove = true;
+
+
+    public void changeMoveState(bool state)
+    {
+        canMove = state;
+    }
 
     void Update()
     {
@@ -46,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if(canMove) rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
