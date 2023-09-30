@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1234187081516438227}
   - component: {fileID: 7603840159441206323}
   - component: {fileID: 5363763199820205884}
+  - component: {fileID: 1689681671576435156}
   m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
@@ -222,9 +223,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  maxComboCount: 5
+  maxComboCount: 3
   cdBetweenComboKeys: 0
+  endLag: 0
+  animator: {fileID: 1234187081516438227}
   comboKeys: 7a0000007800000063000000
   currentCombo: 
   combos:
   - {fileID: 11400000, guid: 28c69dcfde1b5884b953d08341ee121e, type: 2}
+--- !u!114 &1689681671576435156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234187081516438230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e908430bfc2c4494594c6acf90471629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  showBossBar: 0
+  normalHealthBar: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
