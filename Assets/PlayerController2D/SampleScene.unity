@@ -502,10 +502,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raptor (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 9089569740423101196, guid: 68357cc1840c07440bb48bceec14b063, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9089569740423101199, guid: 68357cc1840c07440bb48bceec14b063, type: 3}
       propertyPath: m_RootOrder
       value: 3

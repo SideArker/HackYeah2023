@@ -35,12 +35,8 @@ public class AttackCombo : MonoBehaviour
         GetComponent<PlayerMovement>().changeMoveState(true);
     }
 
-    IEnumerator Attack(string key)
+    public void DealDamage()
     {
-        onCooldown = true;
-        //Invoke(nameof(), cdBetweenComboKeys);
-        PlayerMovement PM = GetComponent<PlayerMovement>();
-
         RaycastHit2D raycastHit;
         if (PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
         else raycastHit = Physics2D.Raycast(transform.position, Vector2.left, 2f);
@@ -52,6 +48,12 @@ public class AttackCombo : MonoBehaviour
             rayHealth.TakeDamage(damage);
         }
 
+    }
+    IEnumerator Attack(string key)
+    {
+        onCooldown = true;
+        //Invoke(nameof(), cdBetweenComboKeys);
+        PlayerMovement PM = GetComponent<PlayerMovement>();
 
         // Basic Attack 1
         if (key == comboKeys[0].ToString().ToLower())
