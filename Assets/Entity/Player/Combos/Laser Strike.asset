@@ -15,7 +15,8 @@ MonoBehaviour:
   enabled: 1
   damage: 50
   range: 10
+  cooldown: 10
   comboString: zcx
-  onCombo:
-    m_PersistentCalls:
-      m_Calls: []
+  animation: {fileID: 0}
+  abilityType: 0
+  laserPrefab: {fileID: 0}
