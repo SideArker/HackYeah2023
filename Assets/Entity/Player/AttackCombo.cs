@@ -1,5 +1,6 @@
 using NaughtyAttributes;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class AttackCombo : MonoBehaviour
     [SerializeField] float damage;
     [SerializeField] int maxComboCount = 5;
     [SerializeField] float cdBetweenComboKeys;
+    [SerializeField] float endLag;
 
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
@@ -26,11 +28,19 @@ public class AttackCombo : MonoBehaviour
         onCooldown = false;
     }
 
-    void Attack(string key)
+    void enableMoving()
     {
-
+        GetComponent<PlayerMovement>().changeMoveState(true);
+    }
+    
+    IEnumerator Attack(string key)
+    {
+        yield return null;
         onCooldown = true;
         Invoke(nameof(disableCooldown), cdBetweenComboKeys);
+        PlayerMovement PM = GetComponent<PlayerMovement>();
+        PM.changeMoveState(false);
+
         RaycastHit2D raycastHit;
         if(PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
         else raycastHit = Physics2D.Raycast(transform.position, Vector2.left, 2f);
@@ -67,14 +77,14 @@ public class AttackCombo : MonoBehaviour
 
         Combo comboFound = combos.Find(x => x.comboString == currentCombo);
 
-        if(comboFound == null) Attack(key);
-
+        if(comboFound == null)
+            StartCoroutine(Attack(key));
         else
         {
             Debug.Log($"Found Combo\n Combo String: {comboFound.comboString}");
             if (comboFound.enabled == false) return;
             currentCombo = "";
-            comboFound.onCombo.Invoke();
+            GetComponent<ComboAbility>().Ability(comboFound);
         }
 
         if (currentCombo.Length >= maxComboCount) currentCombo = "";
