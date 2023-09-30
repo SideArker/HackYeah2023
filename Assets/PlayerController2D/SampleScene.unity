@@ -180,9 +180,17 @@ PrefabInstance:
       value: Player (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5363763199820205884, guid: 638af5e306fcba843b18f715074a0d9f, type: 3}
+      propertyPath: combos.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363763199820205884, guid: 638af5e306fcba843b18f715074a0d9f, type: 3}
       propertyPath: comboKeys.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5363763199820205884, guid: 638af5e306fcba843b18f715074a0d9f, type: 3}
+      propertyPath: combos.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 28c69dcfde1b5884b953d08341ee121e, type: 2}
     - target: {fileID: 5363763199820205884, guid: 638af5e306fcba843b18f715074a0d9f, type: 3}
       propertyPath: comboKeys.Array.data[0]
       value: 122

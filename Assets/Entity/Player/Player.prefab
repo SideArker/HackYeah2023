@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1234187081516438227}
   - component: {fileID: 7603840159441206323}
   - component: {fileID: 5363763199820205884}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,6 +224,7 @@ MonoBehaviour:
   damage: 5
   maxComboCount: 5
   cdBetweenComboKeys: 0
-  comboKeys: 
+  comboKeys: 7a0000007800000063000000
   currentCombo: 
-  combos: []
+  combos:
+  - {fileID: 11400000, guid: 28c69dcfde1b5884b953d08341ee121e, type: 2}
