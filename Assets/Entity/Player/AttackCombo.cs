@@ -63,7 +63,7 @@ public class AttackCombo : MonoBehaviour
 
     void ComboCount(string key)
     {
-        currentCombo += key.ToLower();
+        currentCombo += key;
 
         Combo comboFound = combos.Find(x => x.comboString == currentCombo);
 
