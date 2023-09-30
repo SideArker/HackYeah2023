@@ -7,6 +7,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] float damage = 5;
     [SerializeField] float range = 1.5f;
     [SerializeField] float cooldownTime = 1;
+    [SerializeField] float moveSpeed = 15f;
 
     bool onCooldown;
 
@@ -34,7 +35,9 @@ public class EnemyAttack : MonoBehaviour
     {
         GameObject player = Player.Instance.transform.gameObject;
 
-        if(Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
+        transform.position += moveSpeed * Time.deltaTime * transform.forward;
+
+        if (Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
         {
             Attack();
         }

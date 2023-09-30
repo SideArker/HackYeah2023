@@ -28,13 +28,15 @@ public class AttackCombo : MonoBehaviour
 
     void Attack(string key)
     {
+
         onCooldown = true;
         Invoke(nameof(disableCooldown), cdBetweenComboKeys);
-
-        RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
-        if(raycastHit.collider != null && raycastHit.collider.GetComponent<Health>()) 
+        RaycastHit2D raycastHit;
+        if(PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
+        else raycastHit = Physics2D.Raycast(transform.position, Vector2.left, 2f);
+        if (raycastHit.collider != null && raycastHit.collider.GetComponent<Health>()) 
         {
-            Debug.Log("Collider hit");
+            Debug.Log(raycastHit.collider.gameObject);
             Health rayHealth = raycastHit.collider.GetComponent<Health>();
 
             rayHealth.TakeDamage(damage);

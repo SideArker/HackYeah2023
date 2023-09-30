@@ -10,16 +10,24 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Collider2D interactingCollider;
 
+    public static bool rotation;
+
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         if (movement.x > 0)
+        {
+            rotation = true;
             animator.SetBool("Rotation", true);
+        }
         else
         if (movement.x < 0)
+        {
+            rotation = false;
             animator.SetBool("Rotation", false);
+        }
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Speed", movement.sqrMagnitude);
