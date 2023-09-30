@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     [SerializeField] bool showBossBar;
     [SerializeField] GameObject normalHealthBar;
 
+    bool createdHealthBar;
+
     public UnityEvent onDeath;
 
     #region Health Functions
@@ -46,8 +48,9 @@ public class Health : MonoBehaviour
 
         health -= damage;
 
-        if(health < maxHealth)
+        if(health < maxHealth && !createdHealthBar && !transform.GetComponent<Player>())
         {
+            createdHealthBar = true;
             GameObject healthBar = Instantiate(normalHealthBar, transform.position, transform.rotation, transform);
             healthBar.transform.position += transform.up * 0.75f;
         }
@@ -69,12 +72,18 @@ public class Health : MonoBehaviour
         else shieldAmount -= amount;
     }
 
+    void destroyGameObject()
+    {
+        Destroy(transform.gameObject);
+    }
+
     void KillEntity()
     {
         // Send a message that character is dead 
         //Debug.Log(transform.name + " is dead");
         onDeath.Invoke();
-        Destroy(transform.gameObject);
+        Invoke("destroyGameObject", 0.5f);
+
     }
 
     #endregion

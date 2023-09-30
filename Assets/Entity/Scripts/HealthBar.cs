@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    float timeElapsed;
-    float lerpDuration = 0.3f;
     [SerializeField] GameObject Fill;
 
     Health health;
@@ -18,12 +17,9 @@ public class HealthBar : MonoBehaviour
     {
         if (health.getHealth() < health.getMaxHealth())
         {
-            if (timeElapsed < lerpDuration)
-            {
-                Fill.transform.localScale = new Vector3(Mathf.Lerp(Fill.transform.localScale.x, 0, timeElapsed / lerpDuration), Fill.transform.localScale.y, Fill.transform.localScale.z);
-                timeElapsed += Time.deltaTime;
-            }
-            else Fill.transform.localScale = new Vector3(0, 1, 1);
+            Fill.transform.localScale = new Vector3(health.getHealth() / health.getMaxHealth(), Fill.transform.localScale.y, Fill.transform.localScale.z);
+            Color colorChange = Color.Lerp(Color.red, Color.green, health.getHealth() / health.getMaxHealth());
+            Fill.GetComponentInChildren<SpriteRenderer>().color = colorChange;
         }
     }
 }
