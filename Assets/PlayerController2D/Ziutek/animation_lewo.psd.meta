@@ -133,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adaddf5048d23544fa0557bc50b57038
-      internalID: 1656811512
+      spriteID: 9a9a7184afcb5834a92e5ba15997c1ee
+      internalID: -980655376
       vertices: []
       indices: 
       edges: []
@@ -154,29 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df79260e597063e46b1fda92c4d9c044
-      internalID: -2041521490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animation_lewo_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d0f95eb80d5b31468df7917fb3efa2f
-      internalID: -257467506
+      spriteID: 6e701ee3d47d0e041b963f9b3c492f25
+      internalID: 82605053
       vertices: []
       indices: 
       edges: []
@@ -192,9 +171,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      animation_lewo_0: 1656811512
-      animation_lewo_1: -2041521490
-      animation_lewo_2: -257467506
+      animation_lewo_0: -980655376
+      animation_lewo_1: 82605053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
