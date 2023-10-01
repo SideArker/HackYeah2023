@@ -46,6 +46,15 @@ public class UIController : MonoBehaviour
     }
 
 
+    public void openPanel(GameObject panel)
+    {
+        panel.SetActive(true);
+    }    
+    public void closePanel(GameObject panel)
+    {
+        panel.SetActive(false);
+    }
+
     public void updateComboKeys(GameObject plr)
     {
         string comboString = plr.GetComponent<AttackCombo>().currentCombo;

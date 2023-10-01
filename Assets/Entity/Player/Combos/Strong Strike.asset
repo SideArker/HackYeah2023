@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08be672800243d84086714e83c21026d, type: 3}
+  m_Name: Strong Strike
+  m_EditorClassIdentifier: 
+  enabled: 1
+  damage: 30
+  range: 3
+  cooldown: 5
+  comboString: czz
+  animation: {fileID: 0}
+  abilityType: 1
+  laserPrefab: {fileID: 3695372646408153825, guid: d2e3f0ffa2650ce4f9af359c5adf4797, type: 3}
