@@ -118,6 +118,7 @@ public class AttackCombo : MonoBehaviour
         else
         {
             Debug.Log($"Found Combo\n Combo String: {comboFound.comboString}");
+            Instantiate(comboFound.particle,transform);
             if (comboFound.enabled == false) return;
             currentCombo = "";
             GetComponent<ComboAbility>().Ability(comboFound);
