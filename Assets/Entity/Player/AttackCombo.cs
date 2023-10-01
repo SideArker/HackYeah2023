@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
+
 public class AttackCombo : MonoBehaviour
 {
 
     [Header("Main")]
     [SerializeField] float damage;
-    [SerializeField] int maxComboCount = 5;
+    [SerializeField] int maxComboCount = 3;
     [SerializeField] float cdBetweenComboKeys;
     [SerializeField] float endLag;
     [SerializeField] float timeForComboExpire = 2f;
@@ -16,7 +18,7 @@ public class AttackCombo : MonoBehaviour
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
 
-    public string currentCombo;
+    public string currentCombo { get; private set; }
     bool onCooldown;
     float lastComboKey;
 
@@ -24,6 +26,13 @@ public class AttackCombo : MonoBehaviour
     [Header("Combos")]
     [Expandable]
     [SerializeField] List<Combo> combos = new List<Combo>();
+    [SerializeField] UnityEvent updateUI;
+    
+
+    public int getMaxComboCount()
+    {
+        return maxComboCount;
+    }
 
     void disableCooldown()
     {
@@ -80,6 +89,8 @@ public class AttackCombo : MonoBehaviour
 
         Combo comboFound = combos.Find(x => x.comboString == currentCombo);
 
+        updateUI.Invoke();
+
         if(comboFound == null)
             StartCoroutine(Attack(key));
         else
@@ -91,6 +102,8 @@ public class AttackCombo : MonoBehaviour
         }
 
         if (currentCombo.Length >= maxComboCount) currentCombo = "";
+
+
     }
 
     private void Update()
