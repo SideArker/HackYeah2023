@@ -16,7 +16,7 @@ public class EnemyAttack : MonoBehaviour
         onCooldown = false;
     }
 
-    private void Attack()
+    public void Attack()
     {
         onCooldown = true;
 
@@ -31,15 +31,15 @@ public class EnemyAttack : MonoBehaviour
 
     }
 
-    //private void Update()
-    //{
-    //    GameObject player = Player.Instance.transform.gameObject;
+    private void Update()
+    {
+        GameObject player = Player.Instance.transform.gameObject;
 
-    //    transform.position += moveSpeed * Time.deltaTime * transform.forward;
+        transform.position += moveSpeed * Time.deltaTime * transform.forward;
 
-    //    if (Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
-    //    {
-    //        Attack();
-    //    }
-    //}
+        if (Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
+        {
+            Attack();
+        }
+    }
 }
