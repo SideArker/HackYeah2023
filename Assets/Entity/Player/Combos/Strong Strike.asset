@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08be672800243d84086714e83c21026d, type: 3}
-  m_Name: Laser Strike
+  m_Name: Strong Strike
   m_EditorClassIdentifier: 
   enabled: 1
-  damage: 50
-  range: 10
-  cooldown: 10
-  comboString: zcx
+  damage: 30
+  range: 3
+  cooldown: 5
+  comboString: czz
   animation: {fileID: 0}
-  abilityType: 0
+  abilityType: 1
   laserPrefab: {fileID: 3695372646408153825, guid: d2e3f0ffa2650ce4f9af359c5adf4797, type: 3}

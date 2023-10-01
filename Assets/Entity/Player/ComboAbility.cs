@@ -25,6 +25,16 @@ public class ComboAbility : MonoBehaviour
             Health rayHealth = raycastHit.collider.GetComponent<Health>();
 
             rayHealth.TakeDamage(comboData.damage);
+
+        }
+
+        if (comboData.abilityType == abilityType.Laser)
+        {
+            GameObject laser = Instantiate(comboData.laserPrefab, transform);
+            laser.transform.position = transform.position + transform.right;
+
+            Destroy(laser, 1f);
+
         }
 
     }

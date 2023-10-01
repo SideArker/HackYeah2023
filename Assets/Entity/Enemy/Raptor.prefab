@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3648538419454275351}
   - component: {fileID: 5765679236715423397}
   m_Layer: 0
-  m_Name: Raptor (3)
+  m_Name: Raptor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
