@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
+public class EnemyAttack1 : MonoBehaviour
 {
     [SerializeField] float damage = 5;
     [SerializeField] float range = 1.5f;
     [SerializeField] float cooldownTime = 1;
     [SerializeField] float moveSpeed = 15f;
     [SerializeField] Animator animator;
-    [SerializeField] onTrigger agroCollider;
 
     bool onCooldown;
 
@@ -37,11 +36,7 @@ public class EnemyAttack : MonoBehaviour
     private void Update()
     {
 
-        if (transform.position.y - 1.5f > Player.Instance.transform.position.y -0.5f &&
-            transform.position.y - 1.5f < Player.Instance.transform.position.y + 0.5f
-            && !onCooldown && agroCollider.onTrig)
-
-        
+        if (Vector2.Distance(transform.position, Player.Instance.transform.position) < range && !onCooldown)
         {
             Attack();
         }

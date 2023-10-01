@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9089569740423101199}
   - component: {fileID: 9089569740423101197}
-  - component: {fileID: 9089569740423101192}
+  - component: {fileID: 70361133592787388}
   - component: {fileID: 9089569740423101193}
   - component: {fileID: 9089569740423101194}
   - component: {fileID: 3648538419454275351}
@@ -117,7 +117,7 @@ Transform:
   m_Children:
   - {fileID: 4132026512839369210}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &9089569740423101197
 Animator:
@@ -139,7 +139,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &9089569740423101192
+--- !u!114 &70361133592787388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,11 +148,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9089569740423101196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0032011aaff84674d97c2c1ae752efbb, type: 3}
+  m_Script: {fileID: 11500000, guid: c80468d3472c30c42844efce6042c23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  range: 1.5
+  range: 2
   cooldownTime: 1
   moveSpeed: 15
   animator: {fileID: 9089569740423101197}
@@ -237,7 +237,7 @@ MonoBehaviour:
   minDist: 2
   agroCollider: {fileID: 4132026512839369208}
   animator: {fileID: 9089569740423101197}
-  enemyAttack: {fileID: 9089569740423101192}
+  enemyAttack: {fileID: 0}
 --- !u!212 &5765679236715423397
 SpriteRenderer:
   m_ObjectHideFlags: 0
