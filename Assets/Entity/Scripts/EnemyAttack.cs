@@ -8,6 +8,8 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] float range = 1.5f;
     [SerializeField] float cooldownTime = 1;
     [SerializeField] float moveSpeed = 15f;
+    [SerializeField] Animator animator;
+    [SerializeField] onTrigger agroCollider;
 
     bool onCooldown;
 
@@ -25,6 +27,7 @@ public class EnemyAttack : MonoBehaviour
         GameObject player = Player.Instance.transform.gameObject;
         Health plrHp = player.GetComponent<Health>();
 
+        animator.Play("raptorttack");
         plrHp.TakeDamage(damage);
 
         Invoke(nameof(cooldown), cooldownTime);
@@ -33,11 +36,12 @@ public class EnemyAttack : MonoBehaviour
 
     private void Update()
     {
-        GameObject player = Player.Instance.transform.gameObject;
 
-        transform.position += moveSpeed * Time.deltaTime * transform.forward;
+        if (transform.position.y - 1.5f > Player.Instance.transform.position.y -0.25f &&
+            transform.position.y - 1.5f < Player.Instance.transform.position.y + 0.25f
+            && !onCooldown && agroCollider.onTrig)
 
-        if (Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
+        
         {
             Attack();
         }
