@@ -12,6 +12,7 @@ public class AttackCombo : MonoBehaviour
     [SerializeField] float cdBetweenComboKeys;
     [SerializeField] float endLag;
     [SerializeField] float timeForComboExpire = 2f;
+
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
 
@@ -39,7 +40,6 @@ public class AttackCombo : MonoBehaviour
         yield return null;
         onCooldown = true;
         Invoke(nameof(disableCooldown), cdBetweenComboKeys);
-
         PlayerMovement PM = GetComponent<PlayerMovement>();
         RaycastHit2D raycastHit;
 

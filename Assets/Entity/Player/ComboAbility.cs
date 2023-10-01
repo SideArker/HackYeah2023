@@ -27,6 +27,5 @@ public class ComboAbility : MonoBehaviour
             rayHealth.TakeDamage(comboData.damage);
         }
 
-        
     }
 }
