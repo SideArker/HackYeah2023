@@ -8,6 +8,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] float range = 1.5f;
     [SerializeField] float cooldownTime = 1;
     [SerializeField] float moveSpeed = 15f;
+    [SerializeField] Animator animator;
 
     bool onCooldown;
 
@@ -25,6 +26,7 @@ public class EnemyAttack : MonoBehaviour
         GameObject player = Player.Instance.transform.gameObject;
         Health plrHp = player.GetComponent<Health>();
 
+        animator.Play("raptorttack");
         plrHp.TakeDamage(damage);
 
         Invoke(nameof(cooldown), cooldownTime);
