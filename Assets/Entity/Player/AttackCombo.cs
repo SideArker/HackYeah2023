@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+
 using Unity.VisualScripting;
 
 public class AttackCombo : MonoBehaviour
@@ -13,13 +14,19 @@ public class AttackCombo : MonoBehaviour
     [SerializeField] int maxComboCount = 5;
     [SerializeField] float cdBetweenComboKeys;
     [SerializeField] float endLag;
+
     [SerializeField] Animator animator;
+
+    [SerializeField] float timeForComboExpire = 2f;
+
 
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
 
     public string currentCombo;
     bool onCooldown;
+    float lastComboKey;
+
 
     [Header("Combos")]
     [Expandable]
@@ -93,7 +100,8 @@ public class AttackCombo : MonoBehaviour
 
     void ComboCount(string key)
     {
-        currentCombo += key;
+        lastComboKey = Time.time;
+        currentCombo += key.ToLower();
 
         Combo comboFound = combos.Find(x => x.comboString == currentCombo);
 
@@ -112,6 +120,12 @@ public class AttackCombo : MonoBehaviour
 
     private void Update()
     {
+        if (Time.time > lastComboKey + timeForComboExpire && !string.IsNullOrEmpty(currentCombo))
+        {
+            Debug.Log("combo expire");
+            currentCombo = "";
+        }
+
         if (comboKeys.Any(x => Input.GetKeyDown(x)) && !onCooldown)
         {
             string key = Input.inputString;
@@ -119,6 +133,10 @@ public class AttackCombo : MonoBehaviour
             key = key.Substring(0, 1);
 
             ComboCount(key);
-        };
+        }
+    }
+    private void Start()
+    {
+        lastComboKey = Time.time;
     }
 }

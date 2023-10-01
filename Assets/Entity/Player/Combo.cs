@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public enum abilityType
@@ -19,4 +20,5 @@ public class Combo : ScriptableObject
     public string comboString;
     public Animation animation;
     public abilityType abilityType;
+    public GameObject laserPrefab;
 }
