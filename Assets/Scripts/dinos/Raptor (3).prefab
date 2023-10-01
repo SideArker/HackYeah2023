@@ -117,7 +117,7 @@ Transform:
   m_Children:
   - {fileID: 4132026512839369210}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &9089569740423101197
 Animator:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  range: 1.5
+  range: 2
   cooldownTime: 1
   moveSpeed: 15
   animator: {fileID: 9089569740423101197}

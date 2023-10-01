@@ -35,11 +35,12 @@ public class EnemyAttack : MonoBehaviour
 
     private void Update()
     {
-        GameObject player = Player.Instance.transform.gameObject;
 
-        transform.position += moveSpeed * Time.deltaTime * transform.forward;
+        if (transform.position.y - 1.5f > Player.Instance.transform.position.y -0.5f &&
+            transform.position.y - 1.5f < Player.Instance.transform.position.y + 0.5f
+            && !onCooldown)
 
-        if (Vector2.Distance(transform.position, player.transform.position) < range && !onCooldown)
+        
         {
             Attack();
         }
