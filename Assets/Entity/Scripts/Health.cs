@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     bool createdHealthBar;
 
     public UnityEvent onDeath;
+    [SerializeField] Animator animator;
 
     #region Health Functions
 
@@ -79,7 +80,12 @@ public class Health : MonoBehaviour
         // Send a message that character is dead 
         //Debug.Log(transform.name + " is dead");
         onDeath.Invoke();
-        if (GetComponent<Player>()) return;
+        if (GetComponent<Player>())
+        {
+            animator.Play("PlayerDeath");
+            transform.GetComponent<PlayerMovement>().moveSpeed = 0f;
+            return;
+        }
         Destroy(transform.gameObject);
 
     }

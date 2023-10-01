@@ -20,3 +20,4 @@ MonoBehaviour:
   animation: {fileID: 0}
   abilityType: 1
   laserPrefab: {fileID: 3695372646408153825, guid: d2e3f0ffa2650ce4f9af359c5adf4797, type: 3}
+  particle: {fileID: 7665696665765065172, guid: ad1f69f199fff984d81410b303124604, type: 3}

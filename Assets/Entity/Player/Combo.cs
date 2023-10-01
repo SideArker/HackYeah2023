@@ -21,4 +21,5 @@ public class Combo : ScriptableObject
     public Animation animation;
     public abilityType abilityType;
     public GameObject laserPrefab;
+    public ParticleSystem particle;
 }
