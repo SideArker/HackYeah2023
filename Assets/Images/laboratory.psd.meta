@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6cda5b5d2661e28408ac26c9e142aa64
+guid: 2bacec42179c7644993484e918b1a6b2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,343 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toiletPnacza_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c15ee1bac8a8c204fbe0b2b4e23cc8a4
-      internalID: -2043947011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7874f2800daa8db4996431e5f479311a
-      internalID: -857670063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae1169da90179f64c8d0b1fe4db61c5c
-      internalID: -1585106733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 339f34eea28ea2b4a820e8fd85274c9d
-      internalID: 1738454831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 587c0bc58317de5459d9fec0b185c815
-      internalID: -244795285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 824303284ea41554b9d05e6c12a411e8
-      internalID: 978156954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a55437712b31cc4d9bd356d4fc1f217
-      internalID: 328626460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bec27a0f1a14af4fa9768bf08ebcf01
-      internalID: 675492636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08d453982aff9744f8be4f017229f894
-      internalID: 616081174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd7344bc06d7e2d4eb176ed6f09efba4
-      internalID: -1905807898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 542d242a5081bb043b25e2f2d114b73c
-      internalID: 2130766662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 394d4bf914b0cf546bf0af021464cfc0
-      internalID: -2067328599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_12
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3569924137c91344082ac8f2e72e6797
-      internalID: 377831578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_13
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b5bb555521c1974a8177fccf0795d42
-      internalID: -2086910576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a6e150957c1ab740a85ec6f7d9ceb29
-      internalID: -2032263529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_15
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2c5753038d3af747ae28fb6b7c1efcd
-      internalID: -1721420448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toiletPnacza_16
+      name: laboratory_0
       rect:
         serializedVersion: 2
         x: 0
@@ -457,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 180fb241415b5984092473c38fe0b65f
-      internalID: 1303601705
+      spriteID: 37a65a1585130d94483597fac4e55255
+      internalID: 1249689047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_17
+      name: laboratory_1
       rect:
         serializedVersion: 2
         x: 32
@@ -478,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6db168785f4ae498ab3e64ef8b1f12
-      internalID: 1110427817
+      spriteID: dc3805540126d3346a9167267d85cd57
+      internalID: 1553586416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_18
+      name: laboratory_2
       rect:
         serializedVersion: 2
         x: 64
@@ -499,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7252d5c6311dc849bf8e429808f48d5
-      internalID: -354414175
+      spriteID: 45dcc8ac37e16cc48804e5fc6fcfc010
+      internalID: 1951334545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_19
+      name: laboratory_3
       rect:
         serializedVersion: 2
         x: 96
@@ -520,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a83bc3c312a6eec46b76918ac5a17cb1
-      internalID: 1171876321
+      spriteID: e3f10e06ddb1059448ba0adaf51b23a6
+      internalID: 1481375392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_20
+      name: laboratory_4
       rect:
         serializedVersion: 2
         x: 128
@@ -541,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d997acbc8aceb9a468b3c379dc2a6bb7
-      internalID: -13187694
+      spriteID: f84de1b514cf888419acc439f397138c
+      internalID: -140034000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_21
+      name: laboratory_5
       rect:
         serializedVersion: 2
         x: 160
@@ -562,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e20f390889c3dc645a0a677b191f4202
-      internalID: 2055040166
+      spriteID: ba8e5d0b10a91724aabb7b4bf8227ba4
+      internalID: 792816963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_22
+      name: laboratory_6
       rect:
         serializedVersion: 2
         x: 192
@@ -583,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ccb8ecd30e39d429deeafa52d31e9f
-      internalID: 1793411209
+      spriteID: c3e8c98aee7065f41bda699e000e6342
+      internalID: -459579953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_23
+      name: laboratory_7
       rect:
         serializedVersion: 2
         x: 224
@@ -604,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73ee73f0c0bece44808e678cba0e402
-      internalID: 327639863
+      spriteID: 46139b55559426e4bacd02ba1a6543d0
+      internalID: 2098954639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_24
+      name: laboratory_8
       rect:
         serializedVersion: 2
         x: 0
@@ -625,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5e27d2f62c9dbe45bc2d6794f00addf
-      internalID: -649851863
+      spriteID: 0b7967582dfc20a458e386ab15240965
+      internalID: -459371038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_25
+      name: laboratory_9
       rect:
         serializedVersion: 2
         x: 32
@@ -646,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf39e852ad1faf1499f7e531dcc6078d
-      internalID: 162404501
+      spriteID: 9beaf55861384c74c91b11945d11982e
+      internalID: -56660070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_26
+      name: laboratory_10
       rect:
         serializedVersion: 2
         x: 64
@@ -667,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f66e0b517bbf4840906e0dc4a9d9b73
-      internalID: -1001007831
+      spriteID: 2a244e79ede88a34ea29d1a08a949b1f
+      internalID: 797346394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_27
+      name: laboratory_11
       rect:
         serializedVersion: 2
         x: 96
@@ -688,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34ced3a2e1ddf2d4c9895589cd1cff73
-      internalID: -1739796679
+      spriteID: 05ad05470d0c84147ada71e16bb9fe49
+      internalID: -548654579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_28
+      name: laboratory_12
       rect:
         serializedVersion: 2
         x: 128
@@ -709,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83b1f6a7b0f4d4345afd955ae0e3170d
-      internalID: 1129082468
+      spriteID: 1ec5bddab4d03714c92bad4bd7bc3eca
+      internalID: -844698569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_29
+      name: laboratory_13
       rect:
         serializedVersion: 2
         x: 160
@@ -730,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecfdf2cd6cc144b40b0611a2b4ce3d61
-      internalID: -1042989813
+      spriteID: d9642ef1b9ebc51459483771b1ac2b32
+      internalID: 2146912696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_30
+      name: laboratory_14
       rect:
         serializedVersion: 2
         x: 192
@@ -751,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f191783b5871b24da3c520f050e676b
-      internalID: -957388022
+      spriteID: 435c05fc189e9aa4691e044cbc8a26a8
+      internalID: -1599469632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_31
+      name: laboratory_15
       rect:
         serializedVersion: 2
         x: 224
@@ -772,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a00e688a6df3a224886f1342fa71d007
-      internalID: -1400158221
+      spriteID: 33036cf07380f1944833a190b137be24
+      internalID: -1231664689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_32
+      name: laboratory_16
       rect:
         serializedVersion: 2
         x: 0
@@ -793,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 020d498876f8c5043a706050fa06ac52
-      internalID: 918716279
+      spriteID: bcbd5d15ae2cca446928a279cfbdd2f8
+      internalID: 51153655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_33
+      name: laboratory_17
       rect:
         serializedVersion: 2
         x: 32
@@ -814,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5ce165c17840549ba59f3f4cfd5825
-      internalID: -533304687
+      spriteID: 71658191498912741a43263017d3bce1
+      internalID: -1718470501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_34
+      name: laboratory_18
       rect:
         serializedVersion: 2
         x: 64
@@ -835,14 +499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b494e1c074bbf448638e991c7f4821
-      internalID: 1852789706
+      spriteID: 9e217715f7ea4b548853ef3152321a1b
+      internalID: 36915591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_35
+      name: laboratory_19
       rect:
         serializedVersion: 2
         x: 96
@@ -856,14 +520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc065cea3bbb085499dad8471828ba9e
-      internalID: 1976540019
+      spriteID: db2e498eec8b0924b911863a9ce0238b
+      internalID: 154138617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_36
+      name: laboratory_20
       rect:
         serializedVersion: 2
         x: 128
@@ -877,14 +541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbf11febc10b16478229f9a095b12be
-      internalID: 547585709
+      spriteID: 53d6cd17711ad2b4ca53fbc081de2351
+      internalID: 462816834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_37
+      name: laboratory_21
       rect:
         serializedVersion: 2
         x: 160
@@ -898,14 +562,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62671f3b3270daa499a914ecd1d9cc85
-      internalID: -1142975827
+      spriteID: 1720f26579a22ce4bb9e770983ea68d0
+      internalID: 1229377533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_38
+      name: laboratory_22
       rect:
         serializedVersion: 2
         x: 192
@@ -919,14 +583,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e00e7117f7e2d641bb6f32d56ed5335
-      internalID: 629599814
+      spriteID: 4cb22a32f371be84db792e8f89b8a214
+      internalID: 158614354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_39
+      name: laboratory_23
       rect:
         serializedVersion: 2
         x: 224
@@ -940,14 +604,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d9f9edcc814f84d87fdc33910ecf7b
-      internalID: -2097209603
+      spriteID: 5d76e250f22e69d46baba5b3db0c0f67
+      internalID: -315656659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_40
+      name: laboratory_24
       rect:
         serializedVersion: 2
         x: 0
@@ -961,14 +625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53c4dfc955e0b9943ac4ebe7a264cdae
-      internalID: 1027465441
+      spriteID: c74833fb671998a438eeda745860542f
+      internalID: -814336584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_41
+      name: laboratory_25
       rect:
         serializedVersion: 2
         x: 32
@@ -982,14 +646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9560e57e74133ca439c3a93b5f93a593
-      internalID: -1388336320
+      spriteID: e5c362ae79d8fb346a0941dd0abbad98
+      internalID: -1795772449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_42
+      name: laboratory_26
       rect:
         serializedVersion: 2
         x: 64
@@ -1003,14 +667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3597cd7319afd9748b3ab5f99ab9aeb9
-      internalID: -306921225
+      spriteID: 5d101b66b83bcae4f8586d4da1d49b75
+      internalID: -912738461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_43
+      name: laboratory_27
       rect:
         serializedVersion: 2
         x: 96
@@ -1024,14 +688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d02d05be5ba1a6449a3c120f63c3fdb4
-      internalID: 2098726199
+      spriteID: 3cf1809f5b3c6f146977fa161bdc83ce
+      internalID: -328849219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_44
+      name: laboratory_28
       rect:
         serializedVersion: 2
         x: 128
@@ -1045,14 +709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563ddcd8597a9244baa3a4d6bc1633d0
-      internalID: -2011190136
+      spriteID: 091db58d95f2c1d43a9e5daa09699088
+      internalID: -1364830002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_45
+      name: laboratory_29
       rect:
         serializedVersion: 2
         x: 160
@@ -1066,14 +730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c113955d3ab27f45aca404b9cff34bc
-      internalID: -766410664
+      spriteID: 1fa85f8a8d2b2e944b9f83c7a534d863
+      internalID: 626063307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_46
+      name: laboratory_30
       rect:
         serializedVersion: 2
         x: 192
@@ -1087,14 +751,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a25a239aed396c940a4c9dc3d69bf224
-      internalID: -689571055
+      spriteID: 2797559eef419fd4593626a07f801811
+      internalID: -588007158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toiletPnacza_47
+      name: laboratory_31
       rect:
         serializedVersion: 2
         x: 224
@@ -1108,8 +772,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99419a5788eba4b4780816a8c818258b
-      internalID: 2142333722
+      spriteID: 2dea7de6044378c4eb493477b04c5f72
+      internalID: 809818023
       vertices: []
       indices: 
       edges: []
@@ -1125,54 +789,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      toiletPnacza_36: 547585709
-      toiletPnacza_8: 616081174
-      toiletPnacza_10: 2130766662
-      toiletPnacza_29: -1042989813
-      toiletPnacza_41: -1388336320
-      toiletPnacza_37: -1142975827
-      toiletPnacza_43: 2098726199
-      toiletPnacza_11: -2067328599
-      toiletPnacza_34: 1852789706
-      toiletPnacza_47: 2142333722
-      toiletPnacza_23: 327639863
-      toiletPnacza_1: -857670063
-      toiletPnacza_31: -1400158221
-      toiletPnacza_32: 918716279
-      toiletPnacza_35: 1976540019
-      toiletPnacza_16: 1303601705
-      toiletPnacza_22: 1793411209
-      toiletPnacza_9: -1905807898
-      toiletPnacza_0: -2043947011
-      toiletPnacza_14: -2032263529
-      toiletPnacza_19: 1171876321
-      toiletPnacza_28: 1129082468
-      toiletPnacza_45: -766410664
-      toiletPnacza_33: -533304687
-      toiletPnacza_6: 328626460
-      toiletPnacza_17: 1110427817
-      toiletPnacza_18: -354414175
-      toiletPnacza_20: -13187694
-      toiletPnacza_39: -2097209603
-      toiletPnacza_30: -957388022
-      toiletPnacza_26: -1001007831
-      toiletPnacza_3: 1738454831
-      toiletPnacza_2: -1585106733
-      toiletPnacza_46: -689571055
-      toiletPnacza_40: 1027465441
-      toiletPnacza_4: -244795285
-      toiletPnacza_25: 162404501
-      toiletPnacza_24: -649851863
-      toiletPnacza_21: 2055040166
-      toiletPnacza_5: 978156954
-      toiletPnacza_12: 377831578
-      toiletPnacza_38: 629599814
-      toiletPnacza_44: -2011190136
-      toiletPnacza_15: -1721420448
-      toiletPnacza_27: -1739796679
-      toiletPnacza_42: -306921225
-      toiletPnacza_13: -2086910576
-      toiletPnacza_7: 675492636
+      laboratory_10: 797346394
+      laboratory_14: -1599469632
+      laboratory_20: 462816834
+      laboratory_21: 1229377533
+      laboratory_22: 158614354
+      laboratory_15: -1231664689
+      laboratory_4: -140034000
+      laboratory_17: -1718470501
+      laboratory_1: 1553586416
+      laboratory_11: -548654579
+      laboratory_30: -588007158
+      laboratory_3: 1481375392
+      laboratory_18: 36915591
+      laboratory_28: -1364830002
+      laboratory_25: -1795772449
+      laboratory_31: 809818023
+      laboratory_2: 1951334545
+      laboratory_5: 792816963
+      laboratory_12: -844698569
+      laboratory_6: -459579953
+      laboratory_19: 154138617
+      laboratory_16: 51153655
+      laboratory_13: 2146912696
+      laboratory_24: -814336584
+      laboratory_26: -912738461
+      laboratory_27: -328849219
+      laboratory_9: -56660070
+      laboratory_23: -315656659
+      laboratory_8: -459371038
+      laboratory_7: 2098954639
+      laboratory_29: 626063307
+      laboratory_0: 1249689047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
