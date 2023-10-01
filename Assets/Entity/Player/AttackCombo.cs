@@ -27,6 +27,7 @@ public class AttackCombo : MonoBehaviour
     [Expandable]
     [SerializeField] List<Combo> combos = new List<Combo>();
     [SerializeField] UnityEvent updateUI;
+    [SerializeField] UnityEvent resetUI;
     
 
     public int getMaxComboCount()
@@ -112,6 +113,7 @@ public class AttackCombo : MonoBehaviour
         {
             Debug.Log("combo expire");
             currentCombo = "";
+            resetUI.Invoke();
         }
 
         if (comboKeys.Any(x => Input.GetKeyDown(x)) && !onCooldown)

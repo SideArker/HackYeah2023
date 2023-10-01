@@ -22,11 +22,12 @@ public class UIController : MonoBehaviour
     bool currentlyLerping = false;
 
 
-    void clearKeys()
+    public void clearKeys()
     {
         foreach(GameObject key in ComboKeys)
         {
             key.transform.Find("Text").GetComponent<TMP_Text>().text = "";
+            currentKey = 0;
         }
     }
 
