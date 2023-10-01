@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+
+using Unity.VisualScripting;
+
 public class AttackCombo : MonoBehaviour
 {
 
@@ -11,7 +14,11 @@ public class AttackCombo : MonoBehaviour
     [SerializeField] int maxComboCount = 5;
     [SerializeField] float cdBetweenComboKeys;
     [SerializeField] float endLag;
+
+    [SerializeField] Animator animator;
+
     [SerializeField] float timeForComboExpire = 2f;
+
 
     // max 3
     [SerializeField] List<KeyCode> comboKeys = new List<KeyCode>();
@@ -34,19 +41,13 @@ public class AttackCombo : MonoBehaviour
     {
         GetComponent<PlayerMovement>().changeMoveState(true);
     }
-    
-    IEnumerator Attack(string key)
+
+    public void DealDamage()
     {
-        yield return null;
-        onCooldown = true;
-        Invoke(nameof(disableCooldown), cdBetweenComboKeys);
-        PlayerMovement PM = GetComponent<PlayerMovement>();
         RaycastHit2D raycastHit;
-
-        if(PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
+        if (PlayerMovement.rotation) raycastHit = Physics2D.Raycast(transform.position, Vector2.right, 2f);
         else raycastHit = Physics2D.Raycast(transform.position, Vector2.left, 2f);
-
-        if (raycastHit.collider != null && raycastHit.collider.GetComponent<Health>()) 
+        if (raycastHit.collider != null && raycastHit.collider.GetComponent<Health>())
         {
             Debug.Log(raycastHit.collider.gameObject);
             Health rayHealth = raycastHit.collider.GetComponent<Health>();
@@ -54,23 +55,47 @@ public class AttackCombo : MonoBehaviour
             rayHealth.TakeDamage(damage);
         }
 
-        // Basic Attack 1
-        if(key == comboKeys[0].ToString().ToLower())
-        {
-            Debug.Log("Attack1");
-        }        
+    }
+    IEnumerator Attack(string key)
+    {
+        onCooldown = true;
+        //Invoke(nameof(), cdBetweenComboKeys);
+        PlayerMovement PM = GetComponent<PlayerMovement>();
 
+        // Basic Attack 1
+        if (key == comboKeys[0].ToString().ToLower())
+        {
+            PM.changeMoveState(false);
+            Debug.Log("Attack1");
+            animator.Play("Attack1");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            onCooldown = false;
+
+        }
+        else
         // Basic Attack 2
-        if(key == comboKeys[1].ToString().ToLower())
+        if (key == comboKeys[1].ToString().ToLower())
         {
             Debug.Log("Attack2");
-        }
+            animator.Play("Attack2");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            onCooldown = false;
 
+        }
+        else
         // Basic Attack 3
         if (key == comboKeys[2].ToString().ToLower())
         {
+            PM.changeMoveState(false);
+
             Debug.Log("Attack3");
+            animator.Play("Attack3");
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length + 1);
+            onCooldown = false;
+
         }
+        PM.changeMoveState(true);
+
     }
 
     void ComboCount(string key)
@@ -80,7 +105,7 @@ public class AttackCombo : MonoBehaviour
 
         Combo comboFound = combos.Find(x => x.comboString == currentCombo);
 
-        if(comboFound == null)
+        if (comboFound == null)
             StartCoroutine(Attack(key));
         else
         {

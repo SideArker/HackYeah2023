@@ -28,12 +28,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rotation = true;
             animator.SetBool("Rotation", true);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else
         if (movement.x < 0)
         {
             rotation = false;
             animator.SetBool("Rotation", false);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
         animator.SetFloat("Horizontal", movement.x);
