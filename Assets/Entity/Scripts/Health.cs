@@ -72,17 +72,15 @@ public class Health : MonoBehaviour
         else shieldAmount -= amount;
     }
 
-    void destroyGameObject()
-    {
-        Destroy(transform.gameObject);
-    }
+
 
     void KillEntity()
     {
         // Send a message that character is dead 
         //Debug.Log(transform.name + " is dead");
         onDeath.Invoke();
-        Invoke("destroyGameObject", 0.5f);
+        if (GetComponent<Player>()) return;
+        Destroy(transform.gameObject);
 
     }
 

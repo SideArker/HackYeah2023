@@ -13,6 +13,9 @@ public class UIController : MonoBehaviour
     [SerializeField] float lerpDuration = 0.5f;
     float colorFlashLerpDuration = 0.4f;
     [SerializeField] List<GameObject> ComboKeys;
+    [SerializeField] GameObject codeObj;
+    [SerializeField] GameObject CodeScreen;
+
 
     [SerializeField] Color colorFlash;
 
@@ -22,11 +25,12 @@ public class UIController : MonoBehaviour
     bool currentlyLerping = false;
 
 
-    void clearKeys()
+    public void clearKeys()
     {
         foreach(GameObject key in ComboKeys)
         {
             key.transform.Find("Text").GetComponent<TMP_Text>().text = "";
+            currentKey = 0;
         }
     }
 
@@ -44,6 +48,8 @@ public class UIController : MonoBehaviour
         }
         text.color = Color.white;
     }
+
+
 
 
     public void openPanel(GameObject panel)
@@ -74,6 +80,13 @@ public class UIController : MonoBehaviour
 
         currentKey++;
     }
+
+    public void UpdateCode()
+    {
+
+    codeObj.transform.GetChild(0).GetComponent<TMP_Text>().text = CodeScreen.GetComponent<Code>().generatedCode;
+    }
+
     void Start()
     {
         player = Player.Instance;

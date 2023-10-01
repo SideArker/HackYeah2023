@@ -37,5 +37,7 @@ public class ComboAbility : MonoBehaviour
 
         }
 
+        Invoke(nameof(comboCooldown), (float)comboData.cooldown);
+
     }
 }
