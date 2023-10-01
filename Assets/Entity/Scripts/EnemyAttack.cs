@@ -37,8 +37,8 @@ public class EnemyAttack : MonoBehaviour
     private void Update()
     {
 
-        if (transform.position.y - 1.5f > Player.Instance.transform.position.y -0.5f &&
-            transform.position.y - 1.5f < Player.Instance.transform.position.y + 0.5f
+        if (transform.position.y - 1.5f > Player.Instance.transform.position.y -0.25f &&
+            transform.position.y - 1.5f < Player.Instance.transform.position.y + 0.25f
             && !onCooldown && agroCollider.onTrig)
 
         
