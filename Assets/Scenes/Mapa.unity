@@ -1471,17 +1471,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 286507590}
     m_Modifications:
+    - target: {fileID: 508025048, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_text
+      value: "jak gra\u0107"
+      objectReference: {fileID: 0}
+    - target: {fileID: 508025048, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 517676595, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_text
-      value: 'Use keys: z, x, c for basic attacks
-
-
-        Press Space to interact
-        with doors and environment'
+      value: "U\u017Cyj klawiszy: z, x, c do atakowania\n\nnaci\u015Bnij spacj\u0119
+        aby przechodzi\u0107 przez drzwi i u\u017Cywa\u0107 przedmiot\xF3w"
       objectReference: {fileID: 0}
     - target: {fileID: 517676595, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_margin.w
       value: -25.225777
+      objectReference: {fileID: 0}
+    - target: {fileID: 868703804, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_text
+      value: kontynuuj 1/2
+      objectReference: {fileID: 0}
+    - target: {fileID: 868703804, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1859508361, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_IsActive
@@ -1493,17 +1506,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 659800017839994049, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_text
-      value: '
-
-        do: z, c, x for a laser
-
-
-        do: c, z, z for a strong
-        strike'
+      value: "\nwci\u015Bcnij: z, c, x aby u\u017Cy\u0107 lasera\n\nwci\u015Bcnij:
+        c, z, z aby zaatakowa\u0107 mocniej"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880077375426882160, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6106619161770635374, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_text
+      value: "kliknij by zamkn\u0105\u0107"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6106619161770635374, guid: b20126bcac7b4c94db723736eee565de, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6192192488429292300, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_text
-      value: Combine basic attacks for combos
+      value: "\u0141\u0105cz podstawowe ataki w kombinacje"
       objectReference: {fileID: 0}
     - target: {fileID: 6562918307809160023, guid: b20126bcac7b4c94db723736eee565de, type: 3}
       propertyPath: m_AnchorMax.x
